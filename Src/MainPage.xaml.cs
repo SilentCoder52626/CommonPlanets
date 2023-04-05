@@ -7,7 +7,7 @@ public partial class MainPage : ContentPage
     {
         InitializeComponent();
     }
-    protected override async void OnAppearing()
+    protected override void OnAppearing()
     {
         base.OnAppearing();
 
@@ -32,7 +32,7 @@ public partial class MainPage : ContentPage
         //Commit the animation
         parentAnimation.Commit(this, "TransitionAnimation", 16, 3000, null, null);
     }
-    async void ExploreNow_Clicked(System.Object sender, System.EventArgs e)
+    void ExploreNow_Clicked(System.Object sender, System.EventArgs e)
         => Application.Current.MainPage = new NavigationPage(new PlanetsPage());
 }
 

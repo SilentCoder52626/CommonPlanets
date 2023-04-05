@@ -25,6 +25,28 @@
         <Style TargetType="NavigationPage" ApplyToDerivedTypes="True">
             <Setter Property="BackgroundColor" Value="{StaticResource PageBackgroundColor}" />
         </Style>
+        <!-- Grid Styles -->
+        <Style TargetType="Grid">
+            <Setter Property="Padding" Value="0" />
+            <Setter Property="Margin" Value="0" />
+            <Setter Property="RowSpacing" Value="0" />
+            <Setter Property="ColumnSpacing" Value="0" />
+            <Setter Property="VerticalOptions" Value="Fill" />
+            <Setter Property="HorizontalOptions" Value="Fill" />
+            <Setter Property="BackgroundColor" Value="Transparent" />
+        </Style>
+
+        <!-- CollectionView Styles -->
+        <Style TargetType="CollectionView" ApplyToDerivedTypes="True">
+            <Setter Property="Margin" Value="0" />
+            <Setter Property="ItemSizingStrategy" Value="MeasureFirstItem" />
+            <Setter Property="VerticalOptions" Value="Fill" />
+            <Setter Property="HorizontalOptions" Value="Fill" />
+            <Setter Property="BackgroundColor" Value="Transparent" />
+            <Setter Property="VerticalScrollBarVisibility" Value="Never" />
+            <Setter Property="HorizontalScrollBarVisibility" Value="Never" />
+            <Setter Property="SelectionMode" Value="None" />
+        </Style>
 
         <!-- Button Styles -->
         <Style TargetType="Button" x:Key="ButtonStyle">
@@ -67,6 +89,56 @@
             <Setter Property="LineHeight" Value="1.15" />
             <Setter Property="TextColor" Value="{StaticResource DarkTextColor}" />
         </Style>
+        <Style TargetType="Label" x:Key="PageHeaderStyle" BasedOn="{StaticResource BaseBoldLabeltyle}">
+            <Setter Property="FontSize" Value="32" />
+            <Setter Property="TextColor" Value="White" />
+        </Style>
+
+        <Style TargetType="Label" x:Key="PageHeaderSubtitleStyle" BasedOn="{StaticResource BaseMediumLabeltyle}">
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="TextColor" Value="{StaticResource LightTextColor}" />
+        </Style>
+        <Style TargetType="Label" x:Key="MenuLabelStyle" BasedOn="{StaticResource BaseRegularLabeltyle}">
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="TextColor" Value="#CCCCCC" />
+        </Style>
+
+        <Style TargetType="Label" x:Key="PageSubHeaderStyle" BasedOn="{StaticResource BaseMediumLabeltyle}">
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="TextColor" Value="{StaticResource LightTextColor}" />
+        </Style>
+
+        <Style TargetType="Label" x:Key="FeaturedPlanetHeaderStyle" BasedOn="{StaticResource BaseMediumLabeltyle}">
+            <Setter Property="FontSize" Value="22" />
+            <Setter Property="TextColor" Value="{StaticResource LightTextColor}" />
+        </Style>
+
+        <Style TargetType="Label" x:Key="FeaturedPlanetHeaderSubtitleStyle" BasedOn="{StaticResource BaseRegularLabeltyle}">
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="TextColor" Value="{StaticResource LightTextColor}" />
+        </Style>
+        
+        <Style TargetType="Label" x:Key="AllPlanetHeaderStyle" BasedOn="{StaticResource BaseMediumLabeltyle}">
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="TextColor" Value="{StaticResource LightTextColor}" />
+        </Style>
+
+        <Style TargetType="Label" x:Key="PlanetHeaderStyle" BasedOn="{StaticResource BaseBoldLabeltyle}">
+            <Setter Property="FontSize" Value="48" />
+            <Setter Property="TextColor" Value="{StaticResource LightTextColor}" />
+        </Style>
+
+        <Style TargetType="Label" x:Key="PlanetHeaderSubtitleStyle" BasedOn="{StaticResource BaseRegularLabeltyle}">
+            <Setter Property="FontSize" Value="22" />
+            <Setter Property="TextColor" Value="{StaticResource LightTextColor}" />
+        </Style>
+
+        <Style TargetType="Label" x:Key="PlanetDetailsTextStyle" BasedOn="{StaticResource BaseRegularLabeltyle}">
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="TextColor" Value="{StaticResource LightTextColor}" />
+        </Style>
+
+
     </Application.Resources>
 </Application>
 
